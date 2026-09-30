@@ -1,88 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Yootle</title>
-<meta property="og:title" content="Yootle" />
-<meta property="og:url" content="https://yootle.com/" />
-<link rel="icon" href="favicon.png" />
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Yootle gives employees a protected way to give their employers a candid look at how the company is doing.">
+<title>Yootle — Company Reality from the People Who Know It Best</title>
+<link rel="icon" href="favicon.png">
+<meta property="og:title" content="Yootle">
+<meta property="og:url" content="https://yootle.com/">
+
 <style>
-  :root {
-    --paper:      oklch(97% 0.008 85);
-    --paper-warm: oklch(94.5% 0.012 80);
-    --ink:        oklch(20% 0.012 60);
-    --ink-soft:   oklch(35% 0.012 60);
-    --ink-mute:   oklch(52% 0.012 60);
-    --accent:     oklch(43% 0.13 30);
-    --serif: "Newsreader", "Source Serif Pro", Georgia, serif;
-    --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  }
-
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; height: 100%; }
-  html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-
-  body {
-    background: var(--paper);
-    color: var(--ink);
-    font-family: var(--sans);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-
-  .center {
-    text-align: center;
-    padding: 40px 24px;
-  }
-
-  h1 {
-    font-family: var(--serif);
-    font-size: clamp(48px, 8vw, 96px);
-    font-weight: 300;
-    letter-spacing: -0.02em;
-    margin: 0 0 32px;
-    color: var(--ink);
-  }
-
-  .tagline {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: clamp(22px, 3.5vw, 36px);
-    font-weight: 300;
-    color: var(--ink-soft);
-    margin: 0 0 48px;
-    line-height: 1.3;
-  }
-
-  .institute-link {
-    font-family: var(--sans);
-    font-size: clamp(13px, 1.5vw, 15px);
-    font-weight: 400;
-    color: var(--ink-mute);
-    text-decoration: none;
-    letter-spacing: 0.01em;
-    border-bottom: 1px solid oklch(80% 0.012 75);
-    padding-bottom: 1px;
-    transition: color 0.15s, border-color 0.15s;
-  }
-
-  .institute-link:hover {
-    color: var(--accent);
-    border-color: var(--accent);
-  }
+@font-face{font-family:DMSans;src:url("assets/DMSans.ttf") format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:DMSerif;src:url("assets/DMSerifDisplay.ttf") format('truetype');font-weight:400;font-display:swap}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:#f8f6ef;color:#36444a;font:clamp(16px,1.2vw,17px)/1.65 DMSans,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+h1,h2,h3,p,figure{margin:0}
+a{color:#356b70;text-underline-offset:5px;text-decoration-thickness:1px}
+a:hover{color:#1b2d3e}
+@media (max-width:759px){.wide-only{display:none}}
 </style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="center">
-  <h1>Yootle</h1>
-  <p class="tagline">Clearer reality. Better returns.</p>
-  <a class="institute-link" href="https://institute.yootle.com">institute.yootle.com</a>
+
+<div style="width:min(calc(100% - 40px),1040px);margin:0 auto">
+  <header style="display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;padding:clamp(20px,2vw,30px) 0 clamp(18px,1.8vw,25px);border-bottom:1px solid #d9ddd7">
+    <a href="#" aria-label="Yootle home" style="display:flex;gap:14px;align-items:center;text-decoration:none;color:#1b2d3e"><img src="assets/yootle-elephant-who-blue-124.png" alt="" style="width:clamp(48px,4.3vw,62px);height:auto;display:block"><span style="font:clamp(34px,2.8vw,40px)/1 DMSerif,Georgia,serif;letter-spacing:-1px">yootle</span></a>
+    <span class="wide-only" style="font-size:13px;color:#63706c">Clearer reality. Better returns.</span>
+  </header>
+
+  <section data-screen-label="Hero" style="padding:clamp(34px,4.5vw,66px) 0 clamp(40px,4vw,60px)">
+    <h1 style="font:400 clamp(38px,4.5vw,64px)/1.06 DMSerif,Georgia,serif;letter-spacing:-1.2px;color:#1b2d3e;margin-bottom:clamp(22px,2.4vw,32px);text-wrap:balance">Company Reality<br>from the People Who Know It Best</h1>
+    <div style="max-width:740px;display:flex;flex-direction:column;gap:20px">
+      <p style="font-size:clamp(19px,1.55vw,22px);line-height:1.5;color:#1b2d3e;text-wrap:pretty">Yootle gives employees a protected way to give their employers a candid look at how the company is doing: for its people, its customers, its strategy, its execution, and what it delivers.</p>
+      <p style="text-wrap:pretty">Built for maximum defense of employee feedback, Yootle puts protection into its architecture and design. Identity is kept separate from answer records. Employers receive aggregate findings, never individual answers. Those protections make room for employees to speak candidly.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;margin-top:28px">
+      <p style="font-size:15px;font-weight:600;color:#1b2d3e">Invited to participate? Start with the link your organization sent you.</p>
+      <a href="#how-it-works" style="display:inline-flex;gap:10px;align-items:center;font-size:15px;font-weight:650;text-decoration:none;width:fit-content">How it works <span aria-hidden="true" style="font-size:19px">↓</span></a>
+    </div>
+  </section>
+
+  <section id="how-it-works" data-screen-label="How it works" style="border-top:1px solid #d9ddd7;padding:clamp(38px,3.5vw,50px) 0">
+    <span style="display:block;text-transform:uppercase;font-weight:650;font-size:13px;letter-spacing:1.6px;color:#356b70;margin-bottom:14px">Participation &amp; findings</span>
+    <h2 style="font:400 clamp(30px,3vw,38px)/1.16 DMSerif,Georgia,serif;letter-spacing:-.6px;color:#1b2d3e;margin-bottom:26px">How it works</h2>
+    <div style="max-width:850px">
+      <article style="display:grid;grid-template-columns:clamp(28px,3.2vw,44px) 1fr;gap:clamp(12px,1.4vw,19px);padding:24px 0;border-top:1px solid #d9ddd7">
+        <span aria-hidden="true" style="color:#356b70;font-size:13px;font-weight:650;letter-spacing:1px;padding-top:4px">01</span>
+        <div><h3 style="font-size:19px;font-weight:650;line-height:1.4;color:#1b2d3e;margin-bottom:10px">Employees share what they observe.</h3><p>If your organization invites you to participate, you answer structured questions about your experience at work. Participation is voluntary. <strong style="font-weight:650;color:#1b2d3e">Use a personal device and connection, away from work accounts, machines, and networks.</strong></p></div>
+      </article>
+      <article style="display:grid;grid-template-columns:clamp(28px,3.2vw,44px) 1fr;gap:clamp(12px,1.4vw,19px);padding:24px 0;border-top:1px solid #d9ddd7">
+        <span aria-hidden="true" style="color:#356b70;font-size:13px;font-weight:650;letter-spacing:1px;padding-top:4px">02</span>
+        <div><h3 style="font-size:19px;font-weight:650;line-height:1.4;color:#1b2d3e;margin-bottom:10px">Yootle brings the answers together.</h3><p>At least 30 responses are pooled before reporting results. Employers receive aggregate findings, never individual answers.</p></div>
+      </article>
+      <article style="display:grid;grid-template-columns:clamp(28px,3.2vw,44px) 1fr;gap:clamp(12px,1.4vw,19px);padding:24px 0 0;border-top:1px solid #d9ddd7">
+        <span aria-hidden="true" style="color:#356b70;font-size:13px;font-weight:650;letter-spacing:1px;padding-top:4px">03</span>
+        <div><h3 style="font-size:19px;font-weight:650;line-height:1.4;color:#1b2d3e;margin-bottom:10px">Employees get the findings, too.</h3><p>All eligible employees receive the same findings within 24 hours of release to company management, whether or not they participated. The findings reflect the people who answered.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section data-screen-label="Yootle Difference" style="border-top:1px solid #d9ddd7;padding:clamp(38px,3.5vw,50px) 0;display:flex;flex-wrap:wrap;gap:28px clamp(40px,6vw,72px);align-items:center">
+    <div style="flex:1 1 420px;max-width:680px">
+      <span style="display:block;text-transform:uppercase;font-weight:650;font-size:13px;letter-spacing:1.6px;color:#356b70;margin-bottom:14px">The Yootle Difference</span>
+      <h2 style="font:400 clamp(30px,3vw,38px)/1.16 DMSerif,Georgia,serif;letter-spacing:-.6px;color:#1b2d3e;margin-bottom:22px">Built to make room for candor</h2>
+      <p style="text-wrap:pretty">Useful feedback depends on people being able to speak candidly. Yootle keeps identity separate from answer records and requires employers to commit to non-retribution when they sign up.</p>
+      <a href="assets/yootle-difference-world.webp" target="_blank" rel="noopener" style="display:inline-block;margin-top:22px;font-weight:600;font-size:15px;text-decoration:none;border-bottom:1px solid #86a5a3;padding-bottom:3px">Explore The Yootle Difference <span aria-hidden="true" style="margin-left:6px">↗</span></a>
+    </div>
+    <a href="assets/yootle-difference-world.webp" target="_blank" rel="noopener" style="flex:0 0 168px;display:block;line-height:0;border:1px solid #d9ddd7;box-shadow:0 6px 16px rgba(27,45,62,.07)"><img src="assets/yootle-difference-world-thumb.webp" width="168" height="252" loading="lazy" alt="The Yootle Difference infographic (opens full size). Different tools do different listening jobs: engagement surveys and ongoing listening (Viva Glint, Culture Amp, Qualtrics, Lattice, Workday Peakon, Officevibe); peer conversation and workplace advice (Blind, Fishbowl); public employer reviews (Glassdoor); people-led diagnosis (Yootle). Products overlap; these are common uses, not overall ratings. Yootle: 1, answer through personal devices and connections, away from work accounts, machines and networks; answers are pooled for reporting and identity is kept separate from answer records; a non-retribution commitment is required as part of employer sign-up. 2, Solve Order: people, customers, strategy, execution, delivery; Yootle tests what leadership says against what employees observe. 3, safety in numbers: reporting minimum of 30 people; employers receive aggregate findings, never individual answers. 4, all eligible employees get the same findings within 24 hours of release to company management, whether or not they answered; the findings reflect only the people who did." style="width:100%;height:auto;display:block"></a>
+  </section>
+
+  <section data-screen-label="Solve Order" style="border-top:1px solid #d9ddd7;padding:clamp(38px,3.5vw,50px) 0">
+    <span style="display:block;text-transform:uppercase;font-weight:650;font-size:13px;letter-spacing:1.6px;color:#356b70;margin-bottom:14px">Solve Order</span>
+    <h2 style="font:400 clamp(30px,3vw,38px)/1.16 DMSerif,Georgia,serif;letter-spacing:-.6px;color:#1b2d3e;margin-bottom:26px">The argument behind the diagnosis</h2>
+    <div style="max-width:760px;display:flex;flex-direction:column;gap:19px">
+      <p style="text-wrap:pretty">The Solve Order paper argues that companies improve their odds of success by giving priority to the people and conditions that produce their results. Employees’ experience is a starting point for understanding where those foundations are strong and where they need attention.</p>
+      <p>Think of it as reality-as-a-service: a way to ground the company’s understanding in what its employees observe.</p>
+      <p style="text-wrap:pretty">Revenue, profit, EBITDA, customer satisfaction, and other performance measures tell a company how it is doing. Solve Order calls these results <strong style="font-weight:650;color:#1b2d3e">WHERE</strong>. Its hypothesis directs attention to five connected areas that help produce those results, in this priority order:</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:28px 50px;align-items:center;max-width:930px;margin:32px 0 28px">
+      <ol style="flex:1 1 380px;list-style:none;padding:0;margin:0;border-top:1px solid #d9ddd7">
+        <li style="display:grid;grid-template-columns:10px 64px 1fr;gap:12px;align-items:center;border-bottom:1px solid #d9ddd7;padding:clamp(15px,1.4vw,20px) 0;line-height:1.4"><span style="width:10px;height:10px;border-radius:50%;background:#214E83;border:1px solid rgba(27,45,62,.38)"></span><span style="font-weight:750;font-size:13px;letter-spacing:1px;color:#1b2d3e">WHO</span><span>Put your people first.</span></li>
+        <li style="display:grid;grid-template-columns:10px 64px 1fr;gap:12px;align-items:center;border-bottom:1px solid #d9ddd7;padding:clamp(15px,1.4vw,20px) 0;line-height:1.4"><span style="width:10px;height:10px;border-radius:50%;background:#A33C55;border:1px solid rgba(27,45,62,.38)"></span><span style="font-weight:750;font-size:13px;letter-spacing:1px;color:#1b2d3e">WHOM</span><span>Know your customers.</span></li>
+        <li style="display:grid;grid-template-columns:10px 64px 1fr;gap:12px;align-items:center;border-bottom:1px solid #d9ddd7;padding:clamp(15px,1.4vw,20px) 0;line-height:1.4"><span style="width:10px;height:10px;border-radius:50%;background:#36977D;border:1px solid rgba(27,45,62,.38)"></span><span style="font-weight:750;font-size:13px;letter-spacing:1px;color:#1b2d3e">WHY</span><span>Set a clear direction.</span></li>
+        <li style="display:grid;grid-template-columns:10px 64px 1fr;gap:12px;align-items:center;border-bottom:1px solid #d9ddd7;padding:clamp(15px,1.4vw,20px) 0;line-height:1.4"><span style="width:10px;height:10px;border-radius:50%;background:#D2AE68;border:1px solid rgba(27,45,62,.38)"></span><span style="font-weight:750;font-size:13px;letter-spacing:1px;color:#1b2d3e">HOW</span><span>Make good work repeatable.</span></li>
+        <li style="display:grid;grid-template-columns:10px 64px 1fr;gap:12px;align-items:center;border-bottom:1px solid #d9ddd7;padding:clamp(15px,1.4vw,20px) 0;line-height:1.4"><span style="width:10px;height:10px;border-radius:50%;background:#EBE8DF;border:1px solid rgba(27,45,62,.55)"></span><span style="font-weight:750;font-size:13px;letter-spacing:1px;color:#1b2d3e">WHAT</span><span>Deliver products and services that fit.</span></li>
+      </ol>
+      <figure style="flex:0 1 280px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center">
+        <img src="assets/solve-order-skwedge.svg" alt="The Solve Order skwedge, with WHO at the foundation, then WHOM, WHY, HOW, and WHAT at the top." style="display:block;width:clamp(180px,18vw,240px);height:auto;margin-bottom:14px">
+        <figcaption style="font-size:13px;line-height:1.5;color:#63706c">People form the foundation.<br>Each layer supports what comes above it.</figcaption>
+        <a href="https://solveorder.com" rel="noreferrer" style="display:inline-block;margin-top:10px;font-size:13px;font-weight:600;text-decoration:none;border-bottom:1px solid #86a5a3;padding-bottom:2px">Explore Solve Order <span aria-hidden="true" style="margin-left:6px">↗</span></a>
+      </figure>
+    </div>
+    <p style="max-width:760px;text-wrap:pretty">Watching the scoreboard does not improve the score. Solve Order proposes the order in which to attend to what produces it. Yootle gathers candid observations from the people doing that work, so the company can examine how those five areas may be affecting its results.</p>
+  </section>
+
+  <section data-screen-label="Comparison" style="border-top:1px solid #d9ddd7;padding:clamp(38px,3.5vw,50px) 0">
+    <span style="display:block;text-transform:uppercase;font-weight:650;font-size:13px;letter-spacing:1.6px;color:#356b70;margin-bottom:14px">Claims &amp; experience</span>
+    <h2 style="font:400 clamp(30px,3vw,38px)/1.16 DMSerif,Georgia,serif;letter-spacing:-.6px;color:#1b2d3e;margin-bottom:24px;max-width:620px;text-wrap:balance">Does the company’s account match employees’ experience?</h2>
+    <div aria-hidden="true" style="display:flex;align-items:center;justify-content:space-between;gap:clamp(14px,2vw,30px);max-width:760px;padding:clamp(16px,1.6vw,22px) clamp(16px,2vw,28px);margin-bottom:26px;background:#e9eeea;border-radius:3px;color:#1b2d3e;font-size:15px;line-height:1.45"><span>What the company says</span><span style="font-size:24px;color:#356b70;flex:none">↔</span><span style="text-align:right">What employees observe</span></div>
+    <div style="max-width:760px;display:flex;flex-direction:column;gap:19px">
+      <p style="text-wrap:pretty">Yootle also measures the distance between a company’s stated claims and employees’ experience. These comparisons show where the company’s account of itself is supported by employees’ observations, and where the two diverge. Knowing there is a gap gives the company something concrete to investigate and address.</p>
+      <p style="text-wrap:pretty">Together, the five-area assessment and these comparisons give the company a starting point for diagnosis: what appears to be working, where experiences differ, and what deserves closer investigation.</p>
+    </div>
+  </section>
+
+  <section id="invited" data-screen-label="Invitation" style="background:#e8eeea;border-top:3px solid #356b70;padding:clamp(24px,2.4vw,30px) clamp(22px,2.6vw,36px);margin:5px 0 clamp(40px,4vw,62px)">
+    <h2 style="font:400 28px/1.16 DMSerif,Georgia,serif;color:#1b2d3e;margin-bottom:12px">Invited to participate?</h2>
+    <p style="max-width:700px">Start with the invitation your organization sent you. It contains the link for your assessment.</p>
+  </section>
+
+  <footer style="border-top:1px solid #d9ddd7;padding:28px 0 40px;display:flex;flex-wrap:wrap;gap:10px 28px;align-items:baseline">
+    <div style="font:30px DMSerif,Georgia,serif;color:#1b2d3e">yootle</div>
+    <p style="font-size:13px;color:#63706c;flex:1 1 200px">Clearer reality. Better returns.</p>
+    <nav aria-label="Related sites" style="display:flex;gap:24px;font-size:13px"><a href="https://solveorder.com" rel="noreferrer" style="text-decoration:none">Solve Order ↗</a><a href="https://institute.yootle.com" rel="noreferrer" style="text-decoration:none">Yootle Institute ↗</a></nav>
+  </footer>
 </div>
-</body>
-</html>
+</body></html>
