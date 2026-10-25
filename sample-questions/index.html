@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Try the full 35-question Yootle participant set. No account or submission. An illustrative report from your sample answers.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; form-action 'none'; object-src 'none'; base-uri 'none'">
+  <title>Try the questions — Yootle</title>
+  <link rel="icon" href="/favicon.png">
+  <link rel="stylesheet" href="/about/about.css">
+  <link rel="stylesheet" href="/sample-questions/sample.css?v=f54b46131efe">
+  <script src="/sample-questions/questions.js?v=fc6ffa14f749" defer></script>
+  <script src="/sample-questions/report-model.js?v=3c6651005abd" defer></script>
+  <script src="/sample-questions/report-view.js?v=efde93ce3754" defer></script>
+  <script src="/sample-questions/sample.js?v=3417d926a098" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to sample questions</a>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Yootle home"><img src="/assets/yootle-elephant-who-blue-124.png" width="56" height="56" alt=""><span>yootle</span></a>
+      <a class="home-link" href="/walkthrough/">The walkthrough <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="main">
+      <div class="sample-intro">
+        <p class="eyebrow">Try the questions</p>
+        <h1>What does work<br>look like from inside?</h1>
+        <p>Explore all 35 questions in the current participant set.</p>
+        <p class="question-count-note">30 questions form the chart; three add context; two check attention.</p>
+        <p class="sample-boundary">Sample only · No account · No submission · Illustrative report</p>
+      </div>
+      <noscript><p>Enable JavaScript to try the sample. No answers are submitted or stored.</p></noscript>
+      <p id="load-state" role="status">Loading sample questions…</p>
+      <div id="sample" hidden>
+        <div class="sample-toolbar"><p id="position" role="status" aria-atomic="true">Question 1 of 35</p><button class="clear" id="reset" type="button">Clear &amp; start over</button></div>
+        <progress id="sample-progress" max="35" value="1" aria-label="Position in this 35-question sample">1 of 35</progress>
+        <section class="question-card" id="question-panel" aria-labelledby="question-title">
+          <p class="question-meta"><span id="layer"></span><span id="perspective"></span></p>
+          <h2 id="question-title" tabindex="-1"></h2>
+          <p class="scale-prompt" id="scale-prompt"></p>
+          <div class="slider-control">
+            <output id="answer-value" for="answer-slider" aria-live="polite">No answer selected</output>
+            <input id="answer-slider" type="range" min="1" max="6" step="1" value="3" autocomplete="off" aria-labelledby="question-title" aria-describedby="scale-prompt slider-help" aria-valuetext="No answer selected. Use the arrow keys to choose a value.">
+            <div class="slider-ticks" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div>
+            <div class="slider-ends"><span>Not at all true</span><span>Very true</span></div>
+            <p id="slider-help">Drag or tap the slider, or use the arrow keys. The starting position is not an answer.</p>
+            <details class="scale-key"><summary>See all six scale labels</summary><ol id="scale-labels"></ol></details>
+          </div>
+          <p class="pair-note" id="pair-note">Rate what happens in practice, rather than what you think should happen.</p>
+        </section>
+        <section class="question-card completion" id="completion" aria-labelledby="completion-title" hidden>
+          <p class="eyebrow">Illustrative sample report</p>
+          <h2 id="completion-title" tabindex="-1">Claims and perceived reality.</h2>
+          <p class="report-warning"><strong>Illustrative sample report from your answers; not an organizational report.</strong> Actual reports require group data and every reporting safeguard to pass. This illustration does not assess or pass those safeguards.</p>
+          <p id="report-state" role="status"></p>
+          <button id="complete-answers" class="button secondary" type="button">Continue with unanswered questions →</button>
+          <div id="report-legend" class="report-legend"><span><i class="legend-line claims" aria-hidden="true"></i>Claims</span><span><i class="legend-line reality" aria-hidden="true"></i>Perceived reality</span></div>
+          <div id="report-chart"></div>
+          <p class="report-scale">Original Yootle scale: <strong>1 = Not at all true</strong> to <strong>6 = Very true</strong>.</p>
+          <table class="report-table"><caption>Your sample layer averages · 1–6 scale</caption><thead><tr><th scope="col">Layer</th><th scope="col">Claims</th><th scope="col">Perceived<br>reality</th><th scope="col">Gap</th></tr></thead><tbody id="report-rows"></tbody></table>
+          <p class="report-method">Each layer uses its three claims and three perceived-reality answers. Gap = perceived reality − claims. A negative gap means perceived reality falls below claims. No overall score is calculated.</p>
+          <section class="supporting-context" aria-labelledby="supporting-title">
+            <h3 id="supporting-title">Three answers that add context</h3>
+            <p class="report-method">30 questions form the chart; three add context; two check attention. The answers below are shown separately, on their original 1–6 scale. They do not change the chart. Attention checks are not reported as scores.</p>
+            <dl id="supporting-answers"></dl>
+          </section>
+          <a class="journey-link" href="/walkthrough/">See the full journey <span aria-hidden="true">↗</span></a>
+        </section>
+        <div class="question-nav"><button id="back" class="button secondary" type="button" disabled>Back</button><p id="browse-hint">Choose a value to continue. The starting position is not an answer.</p><button id="next" class="button" type="button" disabled>Next <span aria-hidden="true">→</span></button></div>
+        <p class="report-entry"><button id="show-report" class="clear" type="button">View illustrative sample report →</button></p>
+        <p class="privacy-note">Your choices stay in this page’s memory. Clear them above or reload to start fresh. They are not sent or saved.</p>
+        <p class="sample-note">This is a preview of the 35-question participant set, not a live employee round. The progress bar only shows your place in this sample.</p>
+      </div>
+    </main>
+    <footer><span class="wordmark">yootle</span><p>Clearer reality. Better returns.</p><nav aria-label="Related pages"><a href="/">Yootle home</a><a href="/walkthrough/">Walkthrough</a><a href="/about/">About</a><a href="/contact/">Contact us</a></nav></footer>
+  </div>
+</body>
+</html>
