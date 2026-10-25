@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Yootle with general questions about our work.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; form-action https://formspree.io/f/xreyeerz; object-src 'none'; base-uri 'none'">
+  <title>Contact us — Yootle</title>
+  <link rel="icon" href="/favicon.png">
+  <link rel="stylesheet" href="/about/about.css">
+  <link rel="stylesheet" href="/contact/contact.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to contact form</a>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Yootle home"><img src="/assets/yootle-elephant-who-blue-124.png" width="56" height="56" alt=""><span>yootle</span></a>
+      <a class="home-link" href="/">Back to Yootle <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="main">
+      <p class="eyebrow">Contact</p>
+      <h1>Let’s talk.</h1>
+      <p class="intro">Have a question about Yootle? Send us a note.</p>
+      <div class="contact-card">
+        <p class="contact-boundary" id="contact-boundary">For general inquiries only. This is not an anonymous employee diagnostic. Please don’t include confidential employee feedback.</p>
+        <!-- User-supplied public endpoint. Recipient research@yootle.com is configured in Formspree.
+             Form enabled, hosted CAPTCHA enabled, and research recipient workflow verified from user screenshots.
+             User confirmed the local contact form works and approved publication on 2026-10-25.
+             Standard HTML POST only: no AJAX, embedded CAPTCHA, or client-side success claim. -->
+        <form action="https://formspree.io/f/xreyeerz" method="post" aria-label="Contact Yootle" aria-describedby="contact-boundary" autocomplete="off">
+          <div class="field">
+            <label for="contact-name">Name <span>(optional)</span></label>
+            <input id="contact-name" name="name" type="text" maxlength="100" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="contact-email">Email <span>(required)</span></label>
+            <input id="contact-email" name="email" type="email" required maxlength="254" autocomplete="off" inputmode="email" spellcheck="false" aria-describedby="email-help">
+            <p class="field-help" id="email-help">So we can reply to your message.</p>
+          </div>
+          <div class="field">
+            <label for="contact-message">Message <span>(required)</span></label>
+            <textarea id="contact-message" name="message" required maxlength="3000" rows="6" aria-describedby="message-help"></textarea>
+            <p class="field-help" id="message-help">Up to 3,000 characters.</p>
+          </div>
+          <p class="provider-note" id="provider-note">Sending takes you to Formspree for the next step. Your contact details and message will be processed by Formspree and sent to Yootle. <a href="https://formspree.io/legal/privacy-policy/">Formspree’s privacy policy</a>.</p>
+          <button type="submit" aria-describedby="provider-note">Send message</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <span class="wordmark">yootle</span><p>Clearer reality. Better returns.</p>
+      <nav aria-label="Related pages"><a href="/">Yootle home</a><a href="/walkthrough/">Walkthrough</a><a href="/about/">About</a><a href="/contact/" aria-current="page">Contact us</a></nav>
+    </footer>
+  </div>
+</body>
+</html>
